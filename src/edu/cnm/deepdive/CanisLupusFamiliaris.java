@@ -1,6 +1,13 @@
 package edu.cnm.deepdive;
 
 public class CanisLupusFamiliaris extends CanisLupus {
+  
+public CanisLupusFamiliaris() {
+    
+    System.out.println("CanisLupusFamiliaris::new");
+    
+    data[2] = 5;
+  }
 
   @Override
   public void vocalize() {
@@ -21,4 +28,9 @@ public class CanisLupusFamiliaris extends CanisLupus {
     
   }
 
+  
+ public static void about() {
+    
+    System.out.println("Canis Lupus Familiaris is genus of canidae");
+}
 }
